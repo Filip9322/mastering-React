@@ -4,4 +4,5 @@ ES6-features-3 : spread operator and rest operator
 ES6-features-4 : Object, array and incoming functions destructuring
 ES6-features-5 : Object literal enhacement
 ES6-features-6 : Promises(incompleted)
-
+ES6-functional-1 : how is supported functional programming
+ES6-functional-2 : differences between declarative and imperative
