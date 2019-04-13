@@ -9,3 +9,4 @@ ES6-functional-2 : differences between declarative and imperative
 ES6-functional-3 : Inmutability
 ES6-functional-4 : Pure Functions
 ES6-functional-5 : Data Transformations
+Pure-React-1 : Understanding React.createElement & ReactDOM.render
