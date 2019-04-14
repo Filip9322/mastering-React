@@ -11,5 +11,7 @@
 - ES6-functional-3 : Inmutability
 - ES6-functional-4 : Pure Functions
 - ES6-functional-5 : Data Transformations
+- ES6-functional-6 : High Order Functions, Maps and Sets
+- ES6-functional-7 : Recursion functions
 - Pure-React-1 : Understanding React.createElement & ReactDOM.render
 - Pure-React-2 : Constructing elements with Data
