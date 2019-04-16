@@ -13,5 +13,10 @@
 - ES6-functional-5 : Data Transformations
 - ES6-functional-6 : High Order Functions, Maps and Sets
 - ES6-functional-7 : Recursion functions
+- ES6-functional-8 : Compose and Big Example
 - Pure-React-1 : Understanding React.createElement & ReactDOM.render
 - Pure-React-2 : Constructing elements with Data
+
+## Folder Guide:
+- Mastering-React: React environment to create application
+- Homeworks: Some coding excercises
