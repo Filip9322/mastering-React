@@ -11,7 +11,7 @@ const Recipe1 = {
 class Recipes extends Component{
   render(){
     return(
-      <Summary />
+      <Summary {...Recipe1}/>
     )
   }
 }
@@ -24,22 +24,27 @@ class Summary extends Component {
       <div className="">
         <h1>{title}</h1>
         <p>
-          <span>{ingredients} Ingredients </span>
-          <span>{steps} Steps</span>
+          <span>{ingredients.length} Ingredients </span>
+          <span>{steps.length} Steps</span>
         </p>
       </div>
     )
   }
 }
 Summary.defaultProps = {
-  title: "[Here Title]",
+  title: "[Destroy Title]",
   ingredients: 0,
   steps:0
 }
 Summary.propTypes = {
-  title:       PropTypes.string,
-  ingredients: PropTypes.number.isRequired,
-  steps:       PropTypes.number.isRequired
+  ingredients: PropTypes.array.isRequired,
+  steps:       PropTypes.array.isRequired,
+  title:       (props, propName) =>
+    (typeof props[propName] !== 'string')?
+      new Error("A title must be an string"):
+      (!props[propName].includes('Destroy'))?
+        new Error("You should destroy something >:D"):
+        null
 }
 
 export default Recipes;
