@@ -8,34 +8,37 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types'
 
-class AddColorForm extends Component {
-  constructor(props){
-    super(props)
-    this.submit = this.submit.bind(this)
-  }
-  submit(e){
-    const { _title,_color} = this.refs
+const AddColorForm = ({onNewColor = f => f}) =>{
+  let _title, _color
+  const submit = e =>{
     e.preventDefault();
-    alert(`Muajaja we have a new color: ${_title.value}${_color.value}`);
+    onNewColor(_title.value,_color.value)
     _title.value = "";
     _color.value = '#000000';
     _title.focus();
   }
-  render(){
-    return(
-      <form onSubmit={this.submit}>
-        <input ref ="_title" type="text"  placeholder="EvilColor Name" required />
-        <input ref ="_color" type="color" required />
-        <button>STAB</button>
-      </form>
-    )
-  }
+  return(
+    <form onSubmit={ submit}>
+      <input ref ={input =>_title = input} type="text"  placeholder="EvilColor Name" required />
+      <input ref ={input =>_color = input} type="color" required />
+      <button>STAB</button>
+    </form>
+  )
+}
+AddColorForm.propTypes = {
+  onNewColor: PropTypes.func
+}
+AddColorForm.defaultProps = {
+  onNewColor: f=>f
 }
 
 class ColorPicker extends Component{
   render(){
     return(
-      <AddColorForm />
+      <AddColorForm onNewColor={(title,color) => {
+        console.log(`TODO: add new ${title} and ${color} to the list. `)
+        console.log(`TODO: render UI with the new color`)
+      } }/>
     )
   }
 }
