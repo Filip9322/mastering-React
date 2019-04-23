@@ -8,7 +8,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types'
 
-const AddColorForm = ({onNewColor = f => f}) =>{
+export const AddColorForm = ({onNewColor = f => f}) =>{
   let _title, _color
   const submit = e =>{
     e.preventDefault();
