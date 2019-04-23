@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 //import ColorPicker from './Exercises/ColorPicker'
 //import StarRating  from './Exercises/StarRating'
 import ColorRating from './Exercises/ColorRating'
-import './App.css';
+import './App.scss';
 
 class App extends Component {
   render() {

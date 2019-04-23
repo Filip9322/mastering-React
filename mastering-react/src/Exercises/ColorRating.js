@@ -3,7 +3,7 @@ import {v4}           from 'uuid';
 import PropTypes      from 'prop-types'
 import {Star}         from './StarRating'
 import {AddColorForm} from './ColorPicker'
-import './ColorRating.css';
+import './ColorRating.scss';
 
 class ColorRating extends Component {
   constructor(props){
