@@ -1,25 +1,16 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import Days from './Exercises/Days';
+//import Recipes from './Exercises/Recipes';
+import ColorPicker from './Exercises/ColorPicker'
+import StarRating  from './Exercises/StarRating'
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="exercise">
+        <ColorPicker />
+        <StarRating totalStars = {7}  />
       </div>
     );
   }
