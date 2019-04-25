@@ -1,5 +1,5 @@
 # Mastering React
-## File Guide
+## File Guide - Fundaments ( Js , React )
 - ES6-features-1 : let,const, template strings, default values, arrow functions
 - ES6-features-2 : Classes, constructores, prototypes,inheritance, trasnpiling
 - ES6-features-3 : spread operator and rest operator
@@ -20,3 +20,15 @@
 ## Folder Guide:
 - Mastering-React: React environment to create application
 - Homeworks: Some coding excercises
+
+## Homeworks
+- ClockWork
+- Calculator (In progress)
+
+## Mastering React
+- Exercises
+-- Color Rating: React State Mangement + stateless functional component with setState
+-- Star Rating: 2 way function bindings + stateless functional component
+-- Color Picker: Property validation + default properties + custom property validation
+-- Week Days: React with JsX + React Props
+-- Recipes: React constructing elements with data + Children + React Components
