@@ -9,44 +9,7 @@ class ColorRating extends Component {
   constructor(props){
     super(props)
     this.state = {
-      colors: [
-      {
-        color: "#000000",
-        id: "4443b013-2d79-41a9-8f10-d8294da35aa7",
-        rating: 5,
-        title: "pitch black"
-        },{
-        color: "#ffffff",
-        id: "b1e00ae2-e2e5-46c2-a8c9-c72ac8a3999d",
-        rating: 3,
-        title: "blind white"
-        },{
-        color: "#ff3410",
-        id: "2d0fa8f4-3589-4bfa-90a7-683c320c2ad9",
-        rating: 5,
-        title: "red"
-        },{
-        color: "#fff613",
-        id: "ed801e44-1763-491b-b3e1-fb69dc602968",
-        rating: 1,
-        title: "yellow"
-        },{
-        color: "#07ff0e",
-        id: "3a5f3273-5aaf-4c6e-aafb-47c58b86265f",
-        rating: 1,
-        title: "green"
-        },{
-        color: "#ff12c0",
-        id: "484fa096-c1ad-4c19-8c2a-21bc8b2fecd7",
-        rating: 0,
-        title: "purple"
-        },{
-        color: "#141fff",
-        id: "f7995231-0fba-4d4b-98af-6231778482ba",
-        rating: 0,
-        title: "blue"
-        }
-      ]
+      colors: []
     }
     this.addColor    = this.addColor.bind(this)
     this.rateColor   = this.rateColor.bind(this)
