@@ -32,3 +32,34 @@
 -- Color Picker: Property validation + default properties + custom property validation
 -- Week Days: React with JsX + React Props
 -- Recipes: React constructing elements with data + Children + React Components
+
+TODO  WITH REACT:
+
+
+## Addittional TO-DO in case of boring
+
+-> Animation with scroll event
+https://medium.com/@teffcode/c%C3%B3mo-hacer-animaciones-con-scroll-usando-react-js-a157755b2a1
+
+Adittional Powers:
+- Redux: Manage App state
+- Redux-saga: Isolate side-effects
+- React-feature-toggles: Easy continous delivery and testing
+- RITEway: beatifull readable unit test
+- Cypress.io: Easy unit test ( better than selenium)
+- React Router: Multi-page App
+- GrapQl: To query services
+- Rabbit MQ: to enqueu request
+- Firebase: Offline Database
+- Auth: for Login sessions and sign up
+
+Some Interesting API's:
+- Tmdb: The movie Database
+- ClashAPI: videogame API
+- Netflix API
+- Spotify API
+- Amiib API : Figure Collector API
+- Chatrooms API: create chatrooms and attach users per room
+- Weather API
+- Kitsu API: Anime API
+- Jsonplaceholder: random readable data (recommended /users)

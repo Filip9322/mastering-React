@@ -44,4 +44,4 @@ StarRating.defaultProps = {
   totalStars:5
 }
 
-export default StarRating
+export default StarRating;
