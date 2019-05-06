@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
-// import Days from './Exercises/Days';
-//import Recipes from './Exercises/Recipes';
-//import ColorPicker from './Exercises/ColorPicker'
-//import StarRating  from './Exercises/StarRating'
-import ColorRating from './Exercises/ColorRating'
+import ColorRating from './Exercises/ColorRating';
+import Assigment1 from './Assigments/Assigment_1';
 import './App.scss';
 
 class App extends Component {
   render() {
     return (
       <div className="exercise">
+        <Assigment1  />
         <ColorRating  />
       </div>
     );

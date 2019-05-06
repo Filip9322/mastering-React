@@ -1,0 +1,21 @@
+About Slidding Puzzle
+
+Requirements:
+- Instructions
+- Translation Animation
+- Number of moves
+- isFinished?
+- define size (3x3 - 9x9)
+- Press start for disorder
+- You WIN!
+
+Plus:
+- Show some animations on Random disorder
+- Hints: Color Aura if is in the right position
+- Compete againts the time
+- Compete againts the moves
+- Keep records like in a old console
+- Sorry , you didn't get it!
+
+PLus PLus!:
+- Export image, own image format in Web browser. Based on : Trent willis presentation.
