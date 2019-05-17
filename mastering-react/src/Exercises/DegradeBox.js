@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import CanvasComponent from './CanvasComponent';
 import './DegradeBox.css';
 
 class DegradeBox extends Component {
@@ -10,7 +9,6 @@ class DegradeBox extends Component {
           <div className="degrade degBox2" />
           <div className="degrade degBox3" />
           <div className="degrade degBox4" />*/}
-          <CanvasComponent text="hey Filip" />
       </div>
     )
   }
