@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Histogram} from './Histogram'
+import Histogram from './Histogram'
 import image0 from './0.png';
 
 class CanvasComponent extends Component {
@@ -56,14 +56,14 @@ class CanvasComponent extends Component {
     this.setState({RedDataImage,GreenDataImage,BlueDataImage,imgWidth,imgHeight})
   }
   render(){
+    const {RedDataImage } = this.state
     const {imgWidth,imgHeight} = this.state
-    const {RedDataImage }      = this.state
     return(
       <section>
         <h1>Total {imgWidth*imgHeight} Pixels</h1>
         <canvas ref="canvas" width={300} height={300} />
         <img    ref="image" src={image0} alt="0" className="hidden" />
-        <Histogram data={RedDataImage}/>
+        <Histogram data={RedDataImage} />
       </section>
     )
   }
