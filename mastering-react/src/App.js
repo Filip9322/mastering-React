@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
-import ColorRating from './Exercises/ColorRating';
-import Assigment1 from './Assigments/Assigment_1';
+import DegradeBox from './Exercises/DegradeBox';
 import './App.scss';
 
 class App extends Component {
   render() {
     return (
       <div className="exercise">
-        <Assigment1  />
-        <ColorRating  />
+        <DegradeBox />
       </div>
     );
   }

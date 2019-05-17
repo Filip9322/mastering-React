@@ -27,11 +27,12 @@
 
 ## Mastering React
 - Exercises
--- Color Rating: React State Mangement + stateless functional component with setState
--- Star Rating: 2 way function bindings + stateless functional component
--- Color Picker: Property validation + default properties + custom property validation
--- Week Days: React with JsX + React Props
--- Recipes: React constructing elements with data + Children + React Components
+- Color Rating: React State Mangement + stateless functional component with setState
+- Star Rating: 2 way function bindings + stateless functional component
+- Color Picker: Property validation + default properties + custom property validation
+- Week Days: React with JsX + React Props
+- Recipes: React constructing elements with data + Children + React Components
+- Assigment 1: Update username by state and 2 way function binding, using input and h2 element
 
 TODO  WITH REACT:
 
