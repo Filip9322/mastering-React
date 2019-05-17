@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Histogram} from './Histogram'
 import image0 from './0.png';
 
 class CanvasComponent extends Component {
@@ -42,13 +43,13 @@ class CanvasComponent extends Component {
     const RedDataImage = RGB.filter((n,index)=>{
       return (index %3 === 0)
     })
-    const RG = RGB.filter((n,index)=>{
+    const BG = RGB.filter((n,index)=>{
       return (index %3 !== 0)
     })
-    const BlueDataImage = RG.filter((n,index)=>{
+    const BlueDataImage = BG.filter((n,index)=>{
       return (index %2 !== 0)
     })
-    const GreenDataImage = RG.filter((n,index)=>{
+    const GreenDataImage = BG.filter((n,index)=>{
       return (index %2 === 0)
     })
 
@@ -56,11 +57,13 @@ class CanvasComponent extends Component {
   }
   render(){
     const {imgWidth,imgHeight} = this.state
+    const {RedDataImage }      = this.state
     return(
       <section>
         <h1>Total {imgWidth*imgHeight} Pixels</h1>
         <canvas ref="canvas" width={300} height={300} />
         <img    ref="image" src={image0} alt="0" className="hidden" />
+        <Histogram data={RedDataImage}/>
       </section>
     )
   }

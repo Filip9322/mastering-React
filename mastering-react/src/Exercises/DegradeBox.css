@@ -23,3 +23,11 @@
                                     rgba(255,255,255,0),
                                     rgba(255,255,255,0.5));
 }
+
+.histogramCanvas{
+  width: 400px;
+}
+.histogramBar
+{
+  background-color: green;
+}
