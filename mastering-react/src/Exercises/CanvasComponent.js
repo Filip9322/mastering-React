@@ -56,7 +56,7 @@ class CanvasComponent extends Component {
     this.setState({RedDataImage,GreenDataImage,BlueDataImage,imgWidth,imgHeight})
   }
   render(){
-    const {RedDataImage } = this.state
+    const {RedDataImage,GreenDataImage } = this.state
     const {imgWidth,imgHeight} = this.state
     return(
       <section>

@@ -4,14 +4,14 @@ import './DegradeBox.css'
 class Histogram extends Component{
   constructor(props){
     super(props)
-    this.dataColor = this.props.data
+    //this.dataColor = this.props.data
   }
   componentDidMount(){
     this.updateWidth()
   }
-  getTimesValue(value){
-    const {dataColor} = this
-    const timesValue  = dataColor.filter((i)=>i==value).length
+  getTimesValue(n,dataColor){
+    const timesValue  = dataColor.filter((number)=>number==n)
+    return timesValue
   }
   updateWidth(maxValue,n){
     const canvas = this.refs.canvas
@@ -28,8 +28,9 @@ class Histogram extends Component{
     const maxHeight     = 100
     const timesTable    = Array(256).fill(0)
     const maxValue      = Math.max.apply(null,timesTable)
+    const {data}   = this.props
     const {updateWidth,getTimesValue} = this
-
+    console.log(data)
     /*this.props.data.map((n,index)=>{
       timesTable[n]++
     })*/
@@ -38,7 +39,7 @@ class Histogram extends Component{
       <div className="histogramCanvas">
         <h2>Histograma</h2>
         <canvas ref="canvas" width={256} height={maxHeight} />
-        {timesTable.map((n,i)=><p>{i} #{getTimesValue(n)}</p>)}
+        {timesTable.map((n,i)=><p key ={i}>{i} #{getTimesValue(i,data).length}</p>)}
       </div>
     )
   }
