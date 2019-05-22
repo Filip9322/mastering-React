@@ -32,7 +32,7 @@ const appendAMPM = clockTime =>
 
 const display = target => time => target(time)
 
-const formatClock = format => 
+const formatClock = format =>
   time =>
     format.replace("hh",time.hours)
           .replace("mm",time.minutes)
