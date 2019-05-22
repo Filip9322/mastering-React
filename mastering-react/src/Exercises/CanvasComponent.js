@@ -63,7 +63,9 @@ class CanvasComponent extends Component {
         <h1>Total {imgWidth*imgHeight} Pixels</h1>
         <canvas ref="canvas" width={300} height={300} />
         <img    ref="image" src={image0} alt="0" className="hidden" />
-        <Histogram data={RedDataImage} />
+        <Histogram data={RedDataImage}   color="#FF0000"/>
+        <Histogram data={GreenDataImage} color="#00FF00"/>
+        <Histogram data={GreenDataImage} color="#0000FF"/>
       </section>
     )
   }
