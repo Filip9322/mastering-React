@@ -5,59 +5,50 @@ class Histogram extends Component{
   constructor(){
     super()
     this.dataHistogram = []
+    this.dataScaled    = []
     this.timesTable    = Array(256).fill(0)
     this.canvase       = React.createRef()
   }
-  componentDidMount(){
-    //this.updateWidth()
-  }
   componentDidUpdate(){
-    this.updateWidth()
-    this.mapValuesHistogram()
+    this.updateHistogram()
   }
   getTimesValue(n,dataColor){
     const timesValue  = dataColor.filter((number)=>number===n)
     return timesValue.length
   }
-  mapValuesHistogram(){
-
-    //console.log(timesTable)
-  }
-  updateWidth(i,n){
+  updateHistogram(i,n){
 
     const canvas  = this.canvase.current
     const ctx     = canvas.getContext('2d')
-    ctx.fillStyle = this.props.color;
 
-    const maxWidth     = 400
+    /*-Context Configuration-*/
+    ctx.fillStyle = this.props.color;
+    ctx.translate(0, canvas.height);
+    ctx.scale(1,-1)
 
     const {dataHistogram,timesTable} = this
-    //const {updateWidth} = this
-    const maxValue      = Math.max.apply(null,dataHistogram)
+    const maxValue = Math.max.apply(null,dataHistogram)
 
-    timesTable.map((n,i) => {
+    const dataScale = timesTable.map((n,i) => {
       const itemWidth    = Math.ceil((i*dataHistogram[i])/maxValue)
-      //console.log(itemWidth)
       ctx.fillRect(i,0,1,itemWidth);
+      return itemWidth
     })
-    console.log(this.props.color)
-
+    this.dataScaled  = dataScale
   }
   render(){
 
-    const maxHeight     = 400
-    const {timesTable}  = this
-    const {data}        = this.props
-    const {getTimesValue} = this
+    const {timesTable}     = this
+    const {data,colorName} = this.props
+    const {getTimesValue}  = this
 
     const dataHistogram = timesTable.map((n,i) => getTimesValue(i,data))
     this.dataHistogram  = dataHistogram
 
     return(
       <div className="histogramCanvas">
-        <h2>Histograma</h2>
+        <h2>{colorName} Histogram</h2>
         <canvas ref={this.canvase}  />
-        {/*timesTable.map((n,i)=><p key ={i}>{i} #{getTimesValue(i,data)}</p>)*/}
       </div>
     )
   }
